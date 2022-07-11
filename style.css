@@ -8,14 +8,17 @@ ul {
 }
 
 body {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
   background-image: url(./img/Djl8t3GV4AARxgm.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1200px;
+  height: 1600px;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -34,7 +37,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-h2{
+h2 {
   font-family: 'DotGothic16', sans-serif;
 }
 
@@ -45,17 +48,22 @@ form {
   margin: 30px auto 20px;
 }
 
-input[type="text"] {
+/* input[type="text"] {
   width: 90%;
   padding: 3px 7px;
   border: 1px solid #232b2b;
   border-radius: 3px 0 0 3px;
   background-color: white;
-}
+} */
 
 #input {
   /* text-align: center; */
+  width: 90%;
   color: black;
+  padding: 3px 7px;
+  border: 1px solid #232b2b;
+  border-radius: 3px 0 0 3px;
+  background-color: white;
 }
 
 #btn {
@@ -101,7 +109,7 @@ p {
   background-color: white;
 }
 
-.img_css{
+.img_css {
   margin: 0 auto;
 }
 
@@ -110,6 +118,49 @@ p {
   color: rgb(202, 20, 20);
   cursor: pointer;
 }
+
+/* お問い合わせフォーム */
+
+.otoiawase {
+  flex-direction: column;
+  align-items: center;
+}
+
+.otoiawase input {
+  color: black;
+  padding: 3px 7px;
+  border: 1px solid #232b2b;
+  border-radius: 3px 0 0 3px;
+  background-color: white;
+  font-family: 'DotGothic16', sans-serif;
+  margin-bottom: 25px;
+}
+
+textarea {
+  display: flex;
+  border: 1px solid #232b2b;
+  border-radius: 3px 0 0 3px;
+  background-color: white;
+  font-family: 'DotGothic16', sans-serif;
+  margin-bottom: 10px;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section h1 {
+  margin-top: 50px;
+}
+
+section label {
+  font-family: 'DotGothic16', sans-serif;
+}
+
+
+/* レスポンシブ */
 
 @media screen and (max-width:780px) {
   .container {
@@ -120,7 +171,7 @@ p {
     width: 80%;
   }
 
-  h1{
+  h1 {
     font-size: 24px;
   }
 }

@@ -2,18 +2,6 @@
   $nickname = htmlspecialchars($_POST["nickname"]);
   $email = htmlspecialchars($_POST["email"]);
   $content = htmlspecialchars($_POST["content"]);
-    //   // データベースに接続
-    // $dsn = 'mysql:dbname=contact;host=localhost';
-    // $user = 'root';
-    // $password='root';
-    // $dbh = new PDO($dsn, $user, $password);
-    // $dbh->query('SET NAMES utf8');
-    // 　// SQL文の実行
-    // $sql = "INSERT INTO `contact_db`(`nickname`, `email`, `content`) VALUES ('${nickname}','${email}','${content}')";
-    // $stmt = $dbh->prepare($sql);
-    // $stmt->execute();
-    //   // データベースの切断
-    // $dbh = null;
   // データベースに接続
   $dsn = 'mysql:dbname=contact;host=localhost';
   $user = 'root';
